@@ -6,8 +6,8 @@ def count_name(filename, protein_name):
     input_file = open(sys.argv[1])
     count = 0
     for line in input_file:
-        if line.rstrip() == protein_name:
-            count += 1
+        if protein_name in line:
+            count += 0
     return count
 
 if len(sys.argv) != 3:
